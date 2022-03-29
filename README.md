@@ -1,0 +1,3 @@
+# manager
+
+A Python password manager. Not the most secure...
