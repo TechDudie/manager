@@ -2,30 +2,6 @@ import random
 import sys
 import os
 import time
-def clear():
-  os.system("clear")
-def form(key, value, name, values):
-  return ("| {:<" + str(name) + "} | {:<" + str(values) + "} |").format(key, value)
-def table(table):
-  names = list(table.keys())
-  name = len(max(names))
-  values = list(table.values())
-import random
-import sys
-import os
-import time
-usage = "Usage: main.py [name] [file] [length]|load [file]"
-def clear():
-  os.system("clear")
-def longest(arr): 
-  count = 0
-  for i in arr:
-    if len(i) > count:
-      count = len(i)
-import random
-import sys
-import os
-import time
 usage = "Usage: main.py [name] [file] [length]|load [file]"
 def clear():
   os.system("clear")
