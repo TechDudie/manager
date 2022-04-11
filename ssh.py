@@ -1,5 +1,5 @@
 import sys
-import subprocess
+from subprocess import *
 host = sys.argv[1]
 try:
   print("Connecting to " + host + "using password...")
@@ -17,3 +17,7 @@ except:
   except:
     print("Password not found. Aborting...")
     exit()
+
+ssh = ["ssh", host]
+handle = Popen(ssh, stdout=PIPE, stdin=PIPE, stderr=PIPE, shell=True)
+handle.communicate(input=password)[0]
